@@ -19,7 +19,6 @@ import {
   Send,
   ShieldCheck,
   Sparkles,
-  Star,
   Wrench,
 } from "lucide-react";
 import { useEffect, useLayoutEffect, useRef } from "react";
@@ -84,26 +83,25 @@ const gallery = [
   {
     src: "unique-logo.jpg",
     title: "Windows and doors",
-    body: "Public Facebook image showing composite door and window installation work.",
+    body: "Composite door and window installation work with a clean finish around the frame.",
   },
   {
     src: "unique-bifold.jpg",
     title: "Bifold door service",
-    body: "Facebook visual promoting bifold doors for more light, security and usable living space.",
+    body: "Bifold doors for more light, security and usable living space.",
   },
 ];
 
 const proof = [
-  "Family run business for over 20 years, published on the Facebook page.",
-  "Current Facebook rating shows 100% recommend across 18 reviews.",
-  "Verified Facebook contact routes: mobile and email.",
+  "Family-run window and door team with over 20 years in the trade.",
+  "Mobile and email contact routes are available for window and door enquiries.",
   "North West coverage stated publicly on the business page.",
 ];
 
 const testimonials = [
   {
     name: "Tracey Stewart",
-    source: "Facebook review",
+    source: "Customer review",
     body: "Had a full house of windows and doors from Unique Windows. Graham was professional, helpful, did an excellent job and went above and beyond.",
   },
 ];
@@ -331,12 +329,12 @@ export default function Page() {
         <div className="mx-auto max-w-7xl">
           <Reveal className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <div className="max-w-3xl">
-              <p className="text-sm font-black uppercase text-[#52b4e8]">Real Facebook visuals</p>
-              <h2 className="mt-3 text-4xl font-black leading-tight sm:text-6xl">Window and door work from the business page.</h2>
+              <p className="text-sm font-black uppercase text-[#52b4e8]">Project visuals</p>
+              <h2 className="mt-3 text-4xl font-black leading-tight sm:text-6xl">Window and door work with tidy, practical finishes.</h2>
             </div>
             <a href={facebookUrl} target="_blank" rel="noreferrer">
               <Button variant="secondary" className="rounded-lg bg-white text-[#101722] hover:bg-[#52b4e8]">
-                Facebook page <ArrowUpRight size={18} />
+                View business page <ArrowUpRight size={18} />
               </Button>
             </a>
           </Reveal>
@@ -366,30 +364,19 @@ export default function Page() {
                 <Image src={assets("unique-bifold.jpg")} alt="Unique Windows bifold doors information" fill className="object-contain" />
               </div>
               <div className="flex items-center justify-between gap-4 px-2 py-5">
-                <p className="text-sm font-black uppercase text-[#1c6f9d]">100% recommend</p>
-                <p className="text-sm font-bold text-iron/58">Facebook · 18 reviews</p>
+                <p className="text-sm font-black uppercase text-[#1c6f9d]">Bifold doors</p>
+                <p className="text-sm font-bold text-iron/58">Light, security and usable space</p>
               </div>
             </div>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="max-w-2xl">
-              <p className="text-sm font-black uppercase text-[#1c6f9d]">Facebook reviews</p>
+              <p className="text-sm font-black uppercase text-[#1c6f9d]">Customer testimonial</p>
               <h2 className="mt-3 text-4xl font-black leading-tight sm:text-6xl">Customer proof for the work people notice every day.</h2>
               <p className="mt-5 text-lg font-semibold leading-8 text-iron/68">
-                Unique Windows currently shows 100% recommend across 18 Facebook reviews. The public review visible without login is featured here.
+                Windows and doors are visible every day, so a strong installation should feel tidy, secure and properly finished once the work is complete.
               </p>
               <div className="mt-8 grid gap-4">
-                <div className="rounded-lg border border-iron/10 bg-[#f4f6f8] p-5">
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <p className="font-black text-iron">Facebook rating</p>
-                    <span className="rounded-lg bg-white px-3 py-2 text-sm font-black text-iron/70">100% recommend · 18 reviews</span>
-                  </div>
-                  <div className="mt-4 flex gap-1 text-[#52b4e8]" aria-label="100 percent recommend">
-                    {[0, 1, 2, 3, 4].map((item) => (
-                      <Star key={item} size={22} fill="currentColor" />
-                    ))}
-                  </div>
-                </div>
                 {testimonials.map((testimonial) => (
                   <article key={testimonial.name} className="rounded-lg border border-iron/10 bg-[#f4f6f8] p-6">
                     <p className="text-xl font-black leading-8 text-iron">&quot;{testimonial.body}&quot;</p>
